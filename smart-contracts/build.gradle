@@ -1,0 +1,62 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'green.zerolabs.commons'
+            artifactId = 'smart-contracts'
+            version = '00.00.01-SNAPSHOT'
+
+            from components.java
+        }
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenLocal() {
+        content {
+            includeGroup "green.zerolabs.commons"
+        }
+    }
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    // this is an example of how to depend to a sibling module in the same project
+    // may be removed if not required
+    implementation(project(':core'))
+
+    implementation "software.amazon.awssdk:utils:${awsSdkVersion}"
+
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+    implementation "org.web3j:core:${web3jVersion}"
+    //implementation "org.web3j:web3j-unit:${web3jVersion}"
+    implementation("org.web3j:web3j-evm:${web3jVersion}") {
+        exclude group: 'ch.qos.logback', module: 'logback-classic'
+    }
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation "com.github.jnr:jffi:1.2.17"
+    implementation "io.reactivex.rxjava2:rxjava:2.2.2"
+
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+    testImplementation "org.mockito:mockito-core:${mockitoVersion}"
+    testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+}
+
+tasks.named('test') {
+    // Use JUnit Platform for unit tests.
+    useJUnitPlatform()
+}

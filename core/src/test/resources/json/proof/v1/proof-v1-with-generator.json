@@ -1,0 +1,260 @@
+{
+  "id": "0da23442-6690-4867-b991-c3f43727b9eb",
+  "beneficiaryData": {
+    "id": "c52a4c62-13bf-4c38-8a5c-a80053973bac",
+    "address": "",
+    "blockchainAddress": "0x6A6F9903a2a9Cc921d6C6651Af9caf412333cD5C",
+    "description": "Protocol Labs is an open-source R&D lab. We build protocols, tools, and services to radically improve the internet. Our products serve thousands of organizations and millions of people.Our projects include IPFS, Filecoin, libp2p, and many more. We aim to make human existence orders of magnitude better through technology.",
+    "email": "contact@protocol.ai",
+    "externalId": "",
+    "goals": "At Protocol Labs we work hard on creating systems that will let us coordinate massive action against planetary scale problems like climate change, funding public goods, guaranteeing storage of scientifically valuable data, supporting the creation of hyper-certificates that can reward impact actions on many dimensions and many more. We recognize that Blocks.garden is a novel way to coordinate around climate action, and support both the experimentation and the initiative to decarbonize historical emissions in the crypto space, like we are doing with Filecoin ourselves.",
+    "images": "",
+    "name": "Protocol Labs",
+    "social": "https://twitter.com/protocollabs",
+    "userId": "b99bcea6-562c-492a-bb8c-4cb23c01312a",
+    "website": "https://protocol.ai/"
+  },
+  "certificate": {
+    "id": "7c53bebc--8385--4217--ab2f--15ea57299cae--1",
+    "certificateStatus": "CLAIMED",
+    "claimSingleEventResponses": [
+      {
+        "certificateId": "7c53bebc-8385-4217-ab2f-15ea57299cae--0",
+        "claimData": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001`\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001�\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001�\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002@\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002�\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003 \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00002c52a4c62-13bf-4c38-8a5c-a80053973bac;Protocol Labs\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002US\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00182022-07-01T00:00:00.000Z\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00182022-09-30T23:59:59.999Z\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000TDecarbonization of Ethereum energy consumption of blocks on 2022-09-14 to 2022-09-15\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000-bf74edad-28f8-40a6-ae02-35590f0b323c;15534997\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000$0da23442-6690-4867-b991-c3f43727b9eb\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "claimedValue": "84240000",
+        "claimIssuer": "0x43026540a487ae034e8dae92115f87473c7a8f6d",
+        "claimSubject": "0x6a6f9903a2a9cc921d6c6651af9caf412333cd5c",
+        "creationDateTime": "2022-12-18T18:53:03.501062Z",
+        "topic": "10",
+        "txHash": "0x8ac53a6127a1275dfb9c52f5ba08c8294d999948a1996df6fe5f4c12ca62db8c",
+        "web3Id": "12"
+      }
+    ],
+    "indexedData": {
+      "endDate": "1659311999999",
+      "energyAmount": 84240000,
+      "energySources": [
+        "WIND"
+      ],
+      "energyUnit": "Wh",
+      "productTypes": [
+        "REC"
+      ],
+      "startDate": "1656633600000"
+    },
+    "parents": [
+      "7c53bebc-8385-4217-ab2f-15ea57299cae--0"
+    ],
+    "w3Batch": {
+      "certificateIds": [
+        "12"
+      ],
+      "chainId": "5",
+      "mintCertificatesTxHash": "0x866e7508458c3eaadbe2fce0baee796b06828dd1107f287cc0eaea0c575c8c13",
+      "mintCertificateToAddress": "0x43026540a487ae034e8dae92115f87473c7a8f6d",
+      "protocolVersion": "1.0.1",
+      "redemptionStatement": "bafkreiaa2a25sigl3iont7t7dveaqrmza4f4gnp3kd7dyxc53rzec7x6ea",
+      "redemptionStatementTxHash": "0x6a3d7a7dda16066224f618483f18c855381d434bbfeadddb3d4fe821b55cff70",
+      "storagePointer": "https://bafkreiaa2a25sigl3iont7t7dveaqrmza4f4gnp3kd7dyxc53rzec7x6ea.ipfs.dweb.link",
+      "txHash": "0xf3316e0356815ce2a1791e89e3819fc047f0d18232cea08e1cafb034625f29f0",
+      "userId": "b99bcea6-562c-492a-bb8c-4cb23c01312a",
+      "w3Id": "0xba13a3726399935359008521d239231612b378f998d708226a7299abc5ae54f3",
+      "zlId": "c188f8cc-de09-4d4f-8566-aeb16b569776"
+    },
+    "w3Id": "12",
+    "w3MintDateTime": "2022-12-18T18:07:18.855236Z"
+  },
+  "consumptionEntity": {
+    "id": "bf74edad-28f8-40a6-ae02-35590f0b323c",
+    "beneficiaryId": "c52a4c62-13bf-4c38-8a5c-a80053973bac",
+    "data": [
+      {
+        "consumptionEntityFieldType": "NUMBER",
+        "name": "Number of blocks",
+        "orderNumber": 1,
+        "required": true,
+        "value": "36"
+      },
+      {
+        "consumptionEntityFieldType": "NUMBER",
+        "name": "Total energy amount in Wh",
+        "orderNumber": 2,
+        "required": true,
+        "value": "505440000"
+      },
+      {
+        "consumptionEntityFieldType": "JSON",
+        "name": "Blocks",
+        "orderNumber": 3,
+        "required": false,
+        "value": "[     {         \"blockNumber\": 15534997,         \"extraData\": \"nanopool.org\",         \"locationDerived\": \"europe\",         \"locationAssigned\": \"europe\",         \"timestamp\": \"2022-09-14T18:54:45.000Z\"     },     {         \"blockNumber\": 15534998,         \"extraData\": \"4hash GmbH\",         \"locationDerived\": \"china\",         \"locationAssigned\": \"china\",         \"timestamp\": \"2022-09-14T18:54:46.000Z\"     },     {         \"blockNumber\": 15534999,         \"extraData\": \"asia-east2-15\",         \"locationDerived\": \"china\",         \"locationAssigned\": \"china\",         \"timestamp\": \"2022-09-14T18:55:17.000Z\"     },     {         \"blockNumber\": 15535000,         \"extraData\": \"Hiveon us-heavy-vuk\",         \"locationDerived\": \"us\",         \"locationAssigned\": \"us\",         \"timestamp\": \"2022-09-14T18:56:21.000Z\"     },     {         \"blockNumber\": 15535001,         \"extraData\": \"seo3\",         \"locationDerived\": \"seoul\",         \"locationAssigned\": \"south-east asia\",         \"timestamp\": \"2022-09-14T18:56:31.000Z\"     },     {         \"blockNumber\": 15535002,         \"extraData\": \"七彩神仙鱼\\u0004\\u0002\\\"\",         \"locationDerived\": \"asia\",         \"locationAssigned\": \"south-east asia\",         \"timestamp\": \"2022-09-14T18:56:44.000Z\"     },     {         \"blockNumber\": 15535049,         \"extraData\": \"EthereumPPLNS/2miners_ASIA2\",         \"locationDerived\": \"china\",         \"locationAssigned\": \"china\",         \"timestamp\": \"2022-09-14T19:06:00.000Z\"     },     {         \"blockNumber\": 15535050,         \"extraData\": \"4hash GmbH\",         \"locationDerived\": \"china\",         \"locationAssigned\": \"china\",         \"timestamp\": \"2022-09-14T19:06:21.000Z\"     },     {         \"blockNumber\": 15535051,         \"extraData\": \"europe-west1-2\",         \"locationDerived\": \"europe\",         \"locationAssigned\": \"europe\",         \"timestamp\": \"2022-09-14T19:07:00.000Z\"     },     {         \"blockNumber\": 15535052,         \"extraData\": \"EthereumPPLNS/2miners_EU4\",         \"locationDerived\": \"europe\",         \"locationAssigned\": \"europe\",         \"timestamp\": \"2022-09-14T19:07:12.000Z\"     },     {         \"blockNumber\": 15535053,         \"extraData\": \"EthereumPPLNS/2miners_EU7\",         \"locationDerived\": \"europe\",         \"locationAssigned\": \"europe\",         \"timestamp\": \"2022-09-14T19:07:23.000Z\"     },     {         \"blockNumber\": 15535054,         \"extraData\": \"Hiveon eu-heavy-svd\",         \"locationDerived\": \"europe\",         \"locationAssigned\": \"europe\",         \"timestamp\": \"2022-09-14T19:07:27.000Z\"     },     {         \"blockNumber\": 15535101,         \"extraData\": \"EthereumPPLNS/2miners_USA\",         \"locationDerived\": \"us\",         \"locationAssigned\": \"us\",         \"timestamp\": \"2022-09-14T19:17:13.000Z\"     },     {         \"blockNumber\": 15535102,         \"extraData\": \"七彩神仙鱼K,!\",         \"locationDerived\": \"asia\",         \"locationAssigned\": \"south-east asia\",         \"timestamp\": \"2022-09-14T19:17:16.000Z\"     },     {         \"blockNumber\": 15535103,         \"extraData\": \"poolin.com þô\\fÛÞi\",         \"locationDerived\": \"asia\",         \"locationAssigned\": \"south-east asia\",         \"timestamp\": \"2022-09-14T19:17:31.000Z\"     },     {         \"blockNumber\": 15535104,         \"extraData\": \"poolin.com\\\"_rõ\\u0000Óh>Ç\",         \"locationDerived\": \"asia\",         \"locationAssigned\": \"south-east asia\",         \"timestamp\": \"2022-09-14T19:17:34.000Z\"     },     {         \"blockNumber\": 15535105,         \"extraData\": \"Ø\\u0001\\n\\u0013gethgo1.18.3linux\",         \"locationDerived\": \"asia\",         \"locationAssigned\": \"south-east asia\",         \"timestamp\": \"2022-09-14T19:18:00.000Z\"     },     {         \"blockNumber\": 15535106,         \"extraData\": \"Hiveon eu-heavy-xhm\",         \"locationDerived\": \"europe\",         \"locationAssigned\": \"europe\",         \"timestamp\": \"2022-09-14T19:18:14.000Z\"     },     {         \"blockNumber\": 15535153,         \"extraData\": \"Flexpool/S0/HK - Montreal\",         \"locationDerived\": \"us\",         \"locationAssigned\": \"us\",         \"timestamp\": \"2022-09-14T19:29:01.000Z\"     },     {         \"blockNumber\": 15535154,         \"extraData\": \"poolin.com aãCLMc\",         \"locationDerived\": \"asia\",         \"locationAssigned\": \"south-east asia\",         \"timestamp\": \"2022-09-14T19:29:06.000Z\"     },     {         \"blockNumber\": 15535155,         \"extraData\": \"poolin.com 4È=\\u001e9(ÿÁ\",         \"locationDerived\": \"asia\",         \"locationAssigned\": \"south-east asia\",         \"timestamp\": \"2022-09-14T19:29:16.000Z\"     },     {         \"blockNumber\": 15535156,         \"extraData\": \"poolin.com\\\"´\\n¨dÿC\\\"\\u000f\",         \"locationDerived\": \"asia\",         \"locationAssigned\": \"south-east asia\",         \"timestamp\": \"2022-09-14T19:29:22.000Z\"     },     {         \"blockNumber\": 15535157,         \"extraData\": \"SBICrypto.com Pool(eu)\",         \"locationDerived\": \"europe\",         \"locationAssigned\": \"europe\",         \"timestamp\": \"2022-09-14T19:29:25.000Z\"     },     {         \"blockNumber\": 15535158,         \"extraData\": \"七彩神仙鱼K\\u001a\\\"\",         \"locationDerived\": \"asia\",         \"locationAssigned\": \"south-east asia\",         \"timestamp\": \"2022-09-14T19:29:31.000Z\"     },     {         \"blockNumber\": 15535205,         \"extraData\": \"Flexpool/H0/SE - Mexico City\",         \"locationDerived\": \"us\",         \"locationAssigned\": \"us\",         \"timestamp\": \"2022-09-14T19:38:42.000Z\"     },     {         \"blockNumber\": 15535206,         \"extraData\": \"Hiveon sg-heavy-qcb\",         \"locationDerived\": \"singapore\",         \"locationAssigned\": \"south-east asia\",         \"timestamp\": \"2022-09-14T19:38:56.000Z\"     },     {         \"blockNumber\": 15535207,         \"extraData\": \"EthereumPPLNS/2miners_ASIA\",         \"locationDerived\": \"china\",         \"locationAssigned\": \"china\",         \"timestamp\": \"2022-09-14T19:39:12.000Z\"     },     {         \"blockNumber\": 15535208,         \"extraData\": \"us-east-12\",         \"locationDerived\": \"us-east\",         \"locationAssigned\": \"us-east\",         \"timestamp\": \"2022-09-14T19:39:15.000Z\"     },     {         \"blockNumber\": 15535209,         \"extraData\": \"Hiveon ru-heavy-ivp\",         \"locationDerived\": \"europe\",         \"locationAssigned\": \"europe\",         \"timestamp\": \"2022-09-14T19:39:36.000Z\"     },     {         \"blockNumber\": 15535210,         \"extraData\": \"poolin.com#ªl´_rêD \",         \"locationDerived\": \"asia\",         \"locationAssigned\": \"south-east asia\",         \"timestamp\": \"2022-09-14T19:39:38.000Z\"     },     {         \"blockNumber\": 15535257,         \"extraData\": \"七彩神仙鱼J\\f!\",         \"locationDerived\": \"asia\",         \"locationAssigned\": \"south-east asia\",         \"timestamp\": \"2022-09-14T19:53:18.000Z\"     },     {         \"blockNumber\": 15535258,         \"extraData\": \"Hiveon ru-heavy-ikp\",         \"locationDerived\": \"europe\",         \"locationAssigned\": \"europe\",         \"timestamp\": \"2022-09-14T19:53:24.000Z\"     },     {         \"blockNumber\": 15535259,         \"extraData\": \"asia-east1-2\",         \"locationDerived\": \"china\",         \"locationAssigned\": \"china\",         \"timestamp\": \"2022-09-14T19:53:26.000Z\"     },     {         \"blockNumber\": 15535260,         \"extraData\": \"七彩神仙鱼F/#\",         \"locationDerived\": \"asia\",         \"locationAssigned\": \"south-east asia\",         \"timestamp\": \"2022-09-14T19:53:45.000Z\"     },     {         \"blockNumber\": 15535261,         \"extraData\": \"Hiveon ru-heavy-ivp\",         \"locationDerived\": \"europe\",         \"locationAssigned\": \"europe\",         \"timestamp\": \"2022-09-14T19:53:52.000Z\"     },     {         \"blockNumber\": 15535262,         \"extraData\": \"us-east-6\",         \"locationDerived\": \"us-east\",         \"locationAssigned\": \"us-east\",         \"timestamp\": \"2022-09-14T19:53:58.000Z\"     } ]"
+      }
+    ],
+    "globaldata": {
+      "description": "https://app.blocks.garden/?tokenId=15534997",
+      "entityType": "BLOCKCHAIN_BLOCK",
+      "images": [
+      ],
+      "name": "15534997"
+    },
+    "globalMetadata": {
+      "description": "A Blocks Garden Plot is a part of the larger canvas in <a href=\"https://www.blocks.garden/\">Blocks.garden</a> , a fun and engaging platform to #MakeCryptoGreen.<br>Each Plot contains one or more blocks, the pixels of the canvas, and each block represents one specific Ethereum-1 Block. Each Garden Plot is represented on chain by a ERC-721 <q>Block-NFT</q> on Ethereum mainnet.<br>Learn more on <a href=\"https://www.blocks.garden/\">www.Blocks.garden</a>",
+      "entityType": "BLOCKCHAIN_BLOCK",
+      "images": [
+        "https://zlmvps3110905-prod.s3.eu-west-1.amazonaws.com/public-images/blocks-garden-ce-metadata.jpg"
+      ],
+      "name": "Blocks.garden Plot"
+    },
+    "metadataId": "8b1b9bb1-43d9-48ce-aee8-55cae5a1aa2b",
+    "userId": "b99bcea6-562c-492a-bb8c-4cb23c01312a"
+  },
+  "details": {
+    "certificateId": "7c53bebc--8385--4217--ab2f--15ea57299cae--1",
+    "chainId": "5",
+    "consumptionAmount": 84240000,
+    "consumptionEntityId": "bf74edad-28f8-40a6-ae02-35590f0b323c",
+    "consumptionLocations": [
+      {
+        "country": "US"
+      }
+    ],
+    "consumptionUnit": "Wh",
+    "endDate": "2022-09-30T23:59:59.999Z",
+    "metadata": "Decarbonization of Ethereum energy consumption of blocks on 2022-09-14 to 2022-09-15",
+    "startDate": "2022-07-01T00:00:00.000Z",
+    "userDetails": {
+      "id": "b99bcea6-562c-492a-bb8c-4cb23c01312a",
+      "blockchainAddress": "__BLOCKCHAIN_ADDRESS__",
+      "logo": "_LOGO_",
+      "metadata": {
+        "testMetadataKey": "testMetadataValue"
+      },
+      "metadataType": "TestMetadataType",
+      "name": "Blocks Garden Admin"
+    }
+  },
+  "generationDate": "2022-12-18T18:52:05.323161Z",
+  "generators": [
+    {
+      "id": "fdc15deb-4d07-431c-8010-1bae0c77c804",
+      "capacityUnit": "W",
+      "commissioningDate": "2021-05-01T00:00:00Z",
+      "country": "US",
+      "energySource": "WIND",
+      "generatorName": "IMP- Milligan 1 - Milligan 1",
+      "images": "https://zlmvps3131639-staging.s3.eu-west-1.amazonaws.com/generator-images/Milligan-1-Wind-Project-2.jpeg,https://zlmvps3131639-staging.s3.eu-west-1.amazonaws.com/generator-images/Milligan-1-Wind-Project-_1_.jpeg",
+      "impactStory": "The 300 MW, Milligan 1 Wind Project located in Nebraska became operational in 2021. EDF Renewables handled the development of this project. The Project is located in Saline County, NE. EDF Renewables  invested more than $350 million into rural Nebraska.  The Project includes more than 150 area landowners.  The Project will create approximately 200 jobs throughout the construction period, which resulted in millions of dollars in local spending at hardware stores, hotels, restaurants, and similar businesses.  The project will generate and support full-time, high-paying operations and maintenance jobs. An estimated $100 million in property tax revenue over the life of the project, and participating landowner lease payments will inject additional income into the community that will provide financial support to reinvest into schools, infrastructure and other important community needs.  The Project achieved commercial operation in May 2021.",
+      "latitude": "40.523542",
+      "links": "https://www.edf-re.com/project/milligan-1-wind-project/about/",
+      "longitude": "-97.196925",
+      "nameplateCapacity": 300000000
+    }
+  ],
+  "indexedCertificates": [
+    {
+      "certificateId": "7c53bebc-8385-4217-ab2f-15ea57299cae--0",
+      "endDate": "2022-07-31T23:59:59.999Z",
+      "energyAmount": 84240000,
+      "energySources": [
+        "WIND"
+      ],
+      "energyUnit": "Wh",
+      "productTypes": [
+        "REC"
+      ],
+      "startDate": "2022-07-01T00:00:00.000Z"
+    }
+  ],
+  "proofStatus": "DOCUMENT_GENERATED",
+  "requestDate": "2022-12-18T18:52:05.323161Z",
+  "rootCertificates": [
+    {
+      "id": "7c53bebc-8385-4217-ab2f-15ea57299cae--0",
+      "certificateData": {
+        "id": "7c53bebc-8385-4217-ab2f-15ea57299cae",
+        "certificateRegistry": "MRETS",
+        "energyAmount": 528000000,
+        "energyUnit": "Wh",
+        "generationEnd": "2022-07-31T23:59:59.999Z",
+        "generationStart": "2022-07-01T00:00:00Z",
+        "generatorId": "fdc15deb-4d07-431c-8010-1bae0c77c804",
+        "label": "GREEN_E_ENERGY",
+        "orderId": "ae0c6340-881e-47dc-9752-623e0f702602",
+        "productType": "REC",
+        "redemptionDate": "2022-12-06T00:00:00Z",
+        "redemptionStatementId": "bafkreiaa2a25sigl3iont7t7dveaqrmza4f4gnp3kd7dyxc53rzec7x6ea",
+        "sellerId": "1169c3a5-ad47-4b25-9d28-970231869e68",
+        "supplierId": "7899618a-2d5c-46b1-a5d8-cf60e231e7c2"
+      },
+      "certificateStatus": "ACTIVE",
+      "indexedData": {
+        "endDate": "1659311999999",
+        "energyAmount": 528000000,
+        "energySources": [
+          "WIND"
+        ],
+        "energyUnit": "Wh",
+        "productTypes": [
+          "REC"
+        ],
+        "startDate": "1656633600000"
+      },
+      "order": {
+        "id": "ae0c6340-881e-47dc-9752-623e0f702602",
+        "agreementIdList": [
+        ],
+        "countryRegionList": "US",
+        "currency": "",
+        "deliveryDate": "2022-12-09T00:00:00Z",
+        "energyAmount": 528000000,
+        "energySources": "SOLAR,WIND,THERMAL",
+        "energyUnit": "Wh",
+        "label": "GREEN_E_ENERGY",
+        "productType": "REC",
+        "reportingEnd": "2022-09-30T23:59:59.999Z",
+        "reportingStart": "2022-07-01T00:00:00Z",
+        "sellerId": "1169c3a5-ad47-4b25-9d28-970231869e68",
+        "supplierId": "7899618a-2d5c-46b1-a5d8-cf60e231e7c2"
+      },
+      "w3Batch": {
+        "certificateIds": [
+          "12"
+        ],
+        "chainId": "5",
+        "mintCertificatesTxHash": "0x866e7508458c3eaadbe2fce0baee796b06828dd1107f287cc0eaea0c575c8c13",
+        "mintCertificateToAddress": "0x43026540a487ae034e8dae92115f87473c7a8f6d",
+        "protocolVersion": "1.0.1",
+        "redemptionStatement": "bafkreiaa2a25sigl3iont7t7dveaqrmza4f4gnp3kd7dyxc53rzec7x6ea",
+        "redemptionStatementTxHash": "0x6a3d7a7dda16066224f618483f18c855381d434bbfeadddb3d4fe821b55cff70",
+        "storagePointer": "https://bafkreiaa2a25sigl3iont7t7dveaqrmza4f4gnp3kd7dyxc53rzec7x6ea.ipfs.dweb.link",
+        "txHash": "0xf3316e0356815ce2a1791e89e3819fc047f0d18232cea08e1cafb034625f29f0",
+        "userId": "b99bcea6-562c-492a-bb8c-4cb23c01312a",
+        "w3Id": "0xba13a3726399935359008521d239231612b378f998d708226a7299abc5ae54f3",
+        "zlId": "c188f8cc-de09-4d4f-8566-aeb16b569776"
+      },
+      "w3Id": "12",
+      "w3MintDateTime": "2022-12-18T18:07:18.855236Z"
+    }
+  ],
+  "sellers": [
+    {
+      "id": "1169c3a5-ad47-4b25-9d28-970231869e68",
+      "address": "Katusepapi 6, Tallinn 11412, Estonia",
+      "contact": "inquiries@zerolabs.green",
+      "name": "Zero Labs Green OÜ"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "7899618a-2d5c-46b1-a5d8-cf60e231e7c2",
+      "address": "Vijzelstraat 79, 1017 HG Amsterdam, The Netherlands",
+      "contact": "contracts@stxgroup.com",
+      "name": "STX Commodities B.V."
+    }
+  ],
+  "w2StorageName": "zlmvps3131639-staging",
+  "w2StoragePath": "proof/0da23442-6690-4867-b991-c3f43727b9eb.pdf",
+  "w2StorageUrl": "https://zlmvps3131639-staging.s3.eu-west-1.amazonaws.com/proof/0da23442-6690-4867-b991-c3f43727b9eb.pdf",
+  "w2Url": "https://helix-ui-git-stage-zero-labs.vercel.app/proof/0da23442-6690-4867-b991-c3f43727b9eb",
+  "w3StorageUrl": "https://bafkreie44smqjkrdhkdu4vzri6gcwcaloff4vpgznh5jmbwlwj2kn62k6a.ipfs.dweb.link"
+}

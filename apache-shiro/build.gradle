@@ -1,0 +1,55 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'green.zerolabs.commons'
+            artifactId = 'apache-shiro'
+            version = '00.00.01-SNAPSHOT'
+
+            from components.java
+        }
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenLocal() {
+        content {
+            includeGroup "green.zerolabs.commons"
+        }
+    }
+    mavenCentral()
+}
+
+dependencies {
+    // this is an example of how to depend to a sibling module in the same project
+    // may be removed if not required
+    implementation(project(':core'))
+
+    implementation "org.apache.shiro:shiro-core:1.9.0"
+    implementation "software.amazon.awssdk:utils:${awsSdkVersion}"
+
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+    testImplementation "org.mockito:mockito-core:${mockitoVersion}"
+    testImplementation "org.slf4j:slf4j-simple:${slf4jApiVersion}"
+    testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+}
+
+tasks.named('test') {
+    // Use JUnit Platform for unit tests.
+    useJUnitPlatform()
+}
