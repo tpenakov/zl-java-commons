@@ -1,0 +1,64 @@
+{
+  "id": "a1",
+  "status": "ACTIVE",
+  "order": {
+    "id": "0a420fdb-ff96-42f8-9e99-7c11a6026485",
+    "agreementDate": "2021-11-10T00:00:00Z",
+    "deliveryDate": "2022-04-15T00:00:00Z",
+    "supplierId": "8c0a45ce-1594-4107-baf0-ce8846b34afd",
+    "productType": "REC",
+    "energySources": "WIND|SOLAR",
+    "countryRegionList": "US-CA",
+    "reportingStartTime": "2021-01-01T00:00:00Z",
+    "reportingEndTime": "2021-01-31T23:59:59.999Z",
+    "quantity": 54000000,
+    "energyUnit": "Wh",
+    "price": 29.75,
+    "currency": "USD",
+    "internal": {
+      "status": "OK",
+      "createdDate": "2022-06-17T14:19:51.187923Z",
+      "updatedData": "2022-06-17T14:19:51.187924Z",
+      "lockVersion": 0
+    }
+  },
+  "certificateData": {
+    "id": "",
+    "energy": 1,
+    "energyUnit": "Wh",
+    "generatorName": "Halil",
+    "sellerId": "8c0a45ce-1594-4107-baf0-ce8846b34afd",
+    "beneficiary": "f066596",
+    "energySource": "SOLAR",
+    "country": "US",
+    "region": "CA",
+    "generationStart": "2021-01-01T00:00:00Z",
+    "generationEnd": "2021-01-31T00:00:00Z",
+    "certificateDataDate": "2021-02-12T00:00:00.000Z",
+    "nameplateCapacity": "260000",
+    "commissioningDate": "2010-12-01T00:00:00.000Z",
+    "label": "GREEN_E_ENERGY",
+    "orderId": "0a420fdb-ff96-42f8-9e99-7c11a6026485",
+    "certificateDataStatementId": "10Vk",
+    "internal": {
+      "status": "DRAFT",
+      "createdDate": "2022-06-17T14:19:51.386137Z",
+      "updatedData": "2022-06-17T14:19:51.386137Z",
+      "lockVersion": 0
+    }
+  },
+  "indexedData": {
+    "energy": 1,
+    "energyUnit": "Wh",
+    "startDate": 1609459200000,
+    "endDate": 1612051200000,
+    "energySources": "SOLAR",
+    "countryRegionList": "US-CA"
+  },
+  "internal": {
+    "status": "OK",
+    "createdDate": "2022-06-29T15:55:01.066378Z",
+    "updatedData": "2022-06-29T15:55:01.066380Z",
+    "lockVersion": 0
+  }
+}

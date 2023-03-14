@@ -1,0 +1,8 @@
+{
+  "energy": 100,
+  "energyUnit": "Wh",
+  "startDate": 1609459200000,
+  "endDate": 1612051200000,
+  "energySources": "SOLAR",
+  "countryRegionList": "US-CA"
+}

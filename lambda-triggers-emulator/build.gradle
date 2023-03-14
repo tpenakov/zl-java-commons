@@ -1,0 +1,90 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'io.quarkus' version "$quarkusPlatformVersion"
+}
+
+publishing {
+    tasks.withType(GenerateModuleMetadata).configureEach {
+        // The value 'enforced-platform' is provided in the validation
+        // error message you got
+        suppressedValidationErrors.add('enforced-platform')
+    }
+    publications {
+        maven(MavenPublication) {
+            groupId = 'green.zerolabs.commons'
+            artifactId = 'lambda-triggers-emulator'
+            version = '00.00.01-SNAPSHOT'
+
+            from components.java
+        }
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenLocal() {
+        content {
+            includeGroup "green.zerolabs.commons"
+        }
+    }
+    mavenCentral()
+}
+
+dependencies {
+    implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
+    implementation enforcedPlatform("${quarkusPlatformGroupId}:quarkus-amazon-services-bom:${quarkusPlatformVersion}")
+
+
+    implementation "io.quarkus:quarkus-core:${quarkusPlatformVersion}"
+    implementation "io.quarkus:quarkus-mutiny:${quarkusPlatformVersion}"
+
+    implementation 'io.quarkus:quarkus-resteasy-reactive-jackson'
+    implementation 'io.quarkus:quarkus-rest-client-reactive-jackson'
+    implementation 'io.quarkiverse.amazonservices:quarkus-amazon-sqs'
+    implementation 'software.amazon.awssdk:netty-nio-client'
+    implementation 'io.quarkus:quarkus-arc'
+    implementation 'io.quarkus:quarkus-resteasy-reactive'
+
+    implementation 'org.eclipse.microprofile.graphql:microprofile-graphql-api:1.1.0'
+    implementation "software.amazon.awssdk:utils:${awsSdkVersion}"
+    implementation "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+    implementation "com.fasterxml.jackson.core:jackson-core:${jacksonVersion}"
+    implementation "com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}"
+    implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:${jacksonVersion}"
+
+    implementation 'io.smallrye:smallrye-graphql-client-generator:1.4.3'
+    implementation 'org.eclipse.microprofile.graphql:microprofile-graphql-api:1.1.0'
+    implementation "io.quarkus:quarkus-smallrye-graphql-client:${quarkusPlatformVersion}"
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'org.apache.commons:commons-collections4:4.4'
+    implementation 'commons-io:commons-io:2.11.0'
+
+    implementation("green.zerolabs.commons:core:00.00.01-SNAPSHOT")
+    implementation("green.zerolabs.commons:sqs:00.00.01-SNAPSHOT")
+
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+    testImplementation "org.mockito:mockito-core:${mockitoVersion}"
+    testImplementation "io.quarkus:quarkus-junit5:${quarkusPlatformVersion}"
+    testImplementation "io.quarkus:quarkus-junit5-mockito:${quarkusPlatformVersion}"
+    testImplementation "org.projectlombok:lombok:${lombokVersion}"
+    testImplementation 'io.rest-assured:rest-assured'
+    testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+    integrationTestImplementation "io.quarkus:quarkus-junit5:${quarkusPlatformVersion}"
+    integrationTestImplementation "io.quarkus:quarkus-junit5-mockito:${quarkusPlatformVersion}"
+    integrationTestImplementation "org.projectlombok:lombok:${lombokVersion}"
+    integrationTestAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+}
+
+tasks.named('test') {
+    // Use JUnit Platform for unit tests.
+    useJUnitPlatform()
+}

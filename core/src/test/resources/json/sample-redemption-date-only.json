@@ -1,0 +1,20 @@
+  {
+    "id": "c8a8c387-c52c-49bc-a19c-ce6bf1327639",
+      "energyAmount": 32000000,
+      "energyUnit": "Wh",
+      "generatorId": "496db793-0953-426e-af8f-a342bff7dcbb",
+      "sellerId": "8c0a45ce-1594-4107-baf0-ce8846b34afd",
+      "supplierId": "a027c7c6-5d03-449c-9320-0e41a23e18as",
+      "certificateRegistry": "edba63b9-a223-439f-aab5-e6126e93aac2",
+      "productType": "REC",
+      "generationStart": "2021-01-01",
+      "generationEnd": "2021-01-31",
+      "consumptionEntityId": "f066596",
+      "certificateDataDate": "2021-02-12",
+      "commissioningDate": "2009-01-01",
+      "label": "GREEN_E_ENERGY",
+      "contractId": "0a420fdb-ff96-42f8-9e99-7c11a6026485",
+      "agreements": "",
+      "certificateDataStatementId": "10Vk023",
+      "inventoryId": ""
+  }

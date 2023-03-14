@@ -1,0 +1,129 @@
+[
+  {
+    "id": "58a12228-bb4c-406e-88f9-aa775e8062e5",
+    "sort": "certificate-data",
+    "data": {
+      "id": "58a12228-bb4c-406e-88f9-aa775e8062e5",
+      "status": "CREATED",
+      "order": {
+        "id": "953a7cd9-1d7e-46f4-9cc8-da7340042cbb",
+        "agreementDate": "2021-11-10T00:00:00Z",
+        "deliveryDate": "2022-04-15T00:00:00Z",
+        "sellerId": "8c0a45ce-1594-4107-baf0-ce8846b34afd",
+        "beneficiary": "53fb6148-eb21-42de-91d6-f6195d02852",
+        "productType": "REC",
+        "energySources": "WIND|SOLAR",
+        "countryRegionList": "US-CA",
+        "reportingStartTime": "2021-02-01T00:00:00Z",
+        "reportingEndTime": "2021-02-28T23:59:59.999Z",
+        "quantity": 19000000,
+        "energyUnit": "Wh",
+        "price": 29.75,
+        "currency": "USD",
+        "internal": {
+          "status": "OK",
+          "createdDate": "2022-06-17T14:19:51.191174Z",
+          "updatedData": "2022-06-17T14:19:51.191175Z",
+          "lockVersion": 0
+        }
+      },
+      "certificateData": {
+        "id": "58a12228-bb4c-406e-88f9-aa775e8062e5",
+        "energy": 1000000,
+        "energyUnit": "Wh",
+        "generatorName": "Red Bluff Joint Union High School - Red Bluff 2",
+        "sellerId": "8c0a45ce-1594-4107-baf0-ce8846b34afd",
+        "beneficiary": "53fb6148-eb21-42de-91d6-f6195d028520",
+        "energySource": "SOLAR",
+        "country": "US",
+        "region": "CA",
+        "generationStart": "2021-02-01T00:00:00Z",
+        "generationEnd": "2021-02-28T00:00:00Z",
+        "consumptionEntity": "f066596",
+        "certificateDataDate": "2021-02-12T00:00:00.000Z",
+        "nameplateCapacity": "42000",
+        "commissioningDate": "2011-11-01T00:00:00.000Z",
+        "label": "GREEN_E_ENERGY",
+        "orderId": "953a7cd9-1d7e-46f4-9cc8-da7340042cbb",
+        "certificateDataStatementId": "10Vk",
+        "internal": {
+          "status": "DRAFT",
+          "createdDate": "2022-06-17T14:19:51.388209Z",
+          "updatedData": "2022-06-17T14:19:51.388209Z",
+          "lockVersion": 0
+        }
+      },
+      "indexedData": {
+        "energy": 1000000,
+        "energyUnit": "Wh",
+        "startDate": 1612137600000,
+        "endDate": 1614470400000,
+        "energySources": "SOLAR",
+        "countryRegionList": "US-CA"
+      },
+      "internal": {
+        "status": "OK",
+        "createdDate": "2022-08-01T13:41:00.657048Z",
+        "updatedData": "2022-08-01T13:41:00.657051Z",
+        "lockVersion": 0
+      }
+    }
+  },
+  {
+    "id": "40e70144-7b5d-4a45-985a-d7b1709dae93",
+    "sort": "certificate-version",
+    "gsiNumericSort": 1
+  },
+  {
+    "id": "40e70144-7b5d-4a45-985a-d7b1709dae93",
+    "sort": "CREATED--*--*",
+    "gsiNumericSort": 1622419200000,
+    "data": {
+      "energy": 13000000,
+      "energyUnit": "Wh",
+      "startDate": 1619827200000,
+      "endDate": 1622419200000,
+      "energySources": "SOLAR",
+      "countryRegionList": "US-CA"
+    }
+  },
+  {
+    "id": "40e70144-7b5d-4a45-985a-d7b1709dae93",
+    "sort": "CREATED--*--US",
+    "gsiNumericSort": 1622419200000,
+    "data": {
+      "energy": 13000000,
+      "energyUnit": "Wh",
+      "startDate": 1619827200000,
+      "endDate": 1622419200000,
+      "energySources": "SOLAR",
+      "countryRegionList": "US-CA"
+    }
+  },
+  {
+    "id": "40e70144-7b5d-4a45-985a-d7b1709dae93",
+    "sort": "CREATED--SOLAR--*",
+    "gsiNumericSort": 1622419200000,
+    "data": {
+      "energy": 13000000,
+      "energyUnit": "Wh",
+      "startDate": 1619827200000,
+      "endDate": 1622419200000,
+      "energySources": "SOLAR",
+      "countryRegionList": "US-CA"
+    }
+  },
+  {
+    "id": "40e70144-7b5d-4a45-985a-d7b1709dae93",
+    "sort": "CREATED--SOLAR--US",
+    "gsiNumericSort": 1622419200000,
+    "data": {
+      "energy": 13000000,
+      "energyUnit": "Wh",
+      "startDate": 1619827200000,
+      "endDate": 1622419200000,
+      "energySources": "SOLAR",
+      "countryRegionList": "US-CA"
+    }
+  }
+]

@@ -1,0 +1,12 @@
+rootProject.name = 'zl-java-commons'
+include 'core'
+include 's3'
+include 'lambda'
+include 'sqs'
+include 'ssm'
+include 'apache-shiro'
+include 'smart-contracts'
+include 'gqgen'
+include 'dynamo-db'
+include 'cron-job'
+

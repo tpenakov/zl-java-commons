@@ -1,0 +1,70 @@
+plugins {
+    id 'java-library'
+    id 'jacoco'
+    id 'maven-publish'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'green.zerolabs.commons'
+            artifactId = 'dynamo-db'
+            version = '00.00.01-SNAPSHOT'
+
+            from components.java
+        }
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenLocal() {
+        content {
+            includeGroup "green.zerolabs.commons"
+        }
+    }
+    mavenCentral()
+}
+
+dependencies {
+    // this is an example of how to depend to a sibling module in the same project
+    // may be removed if not required
+    implementation(project(':core'))
+    implementation(project(':apache-shiro'))
+
+    implementation "io.quarkus:quarkus-core:${quarkusPlatformVersion}"
+    implementation "io.quarkus:quarkus-mutiny:${quarkusPlatformVersion}"
+    implementation "io.quarkiverse.amazonservices:quarkus-amazon-dynamodb:${quarkiversePlatformVersion}"
+    implementation("com.github.bijukunjummen:aws-sdk2-dynamo-json-helper:0.13.0")
+
+    implementation "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+    implementation "com.fasterxml.jackson.core:jackson-core:${jacksonVersion}"
+    implementation "com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}"
+    implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:${jacksonVersion}"
+
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+    testImplementation "org.mockito:mockito-core:${mockitoVersion}"
+    testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+    testImplementation 'org.apache.commons:commons-lang3:3.12.0'
+    testImplementation 'org.apache.commons:commons-collections4:4.4'
+    testImplementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+}
+test {
+    useJUnitPlatform()
+    finalizedBy jacocoTestReport // report is always generated after tests run
+}
+
+jacocoTestReport {
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: ['**/model/**', '**/exception/**', '**/utils/DynamoDbUtils*',])
+        }))
+    }
+}

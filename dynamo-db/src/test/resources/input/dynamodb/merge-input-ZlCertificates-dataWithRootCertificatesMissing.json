@@ -1,0 +1,46 @@
+[
+  {
+    "id": "a1-1",
+    "status": "ACTIVE",
+    "parents": [
+      "a1"
+    ],
+    "indexedData": {
+      "energy": 100,
+      "energyUnit": "Wh",
+      "startDate": 1609459200000,
+      "endDate": 1612051200000,
+      "energySources": "SOLAR",
+      "countryRegionList": "US-CA"
+    },
+    "dataWithRootCertificates": [],
+    "internal": {
+      "status": "OK",
+      "createdDate": "2022-07-29T08:22:24.339050Z",
+      "updatedData": "2022-07-29T08:22:24.339062Z",
+      "lockVersion": 0
+    }
+  },
+  {
+    "id": "a1-2",
+    "status": "ACTIVE",
+    "parents": [
+      "a1"
+    ],
+    "indexedData": {
+      "energy": 31999900,
+      "energyUnit": "Wh",
+      "startDate": 1609459200000,
+      "endDate": 1612051200000,
+      "energySources": "SOLAR",
+      "countryRegionList": "US-CA"
+    },
+    "dataWithRootCertificates": [],
+    "internal": {
+      "status": "OK",
+      "createdDate": "2022-07-29T08:22:24.339050Z",
+      "updatedData": "2022-07-29T08:22:24.339062Z",
+      "lockVersion": 0
+    }
+  }
+]

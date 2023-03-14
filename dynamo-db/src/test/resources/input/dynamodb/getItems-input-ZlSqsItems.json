@@ -1,0 +1,58 @@
+{
+  "store": {
+    "certificateDataList": [
+      {
+        "id": "496db793-0953-426e-af8f-a342bff7dcee",
+        "energy": 32000000,
+        "energyUnit": "Wh",
+        "generatorName": "Milpitas High School Solar",
+        "sellerId": "8c0a45ce-1594-4107-baf0-ce8846b34afd",
+        "beneficiary": "53fb6148-eb21-42de-91d6-f6195d028520",
+        "energySource": "SOLAR",
+        "country": "US",
+        "region": "CA",
+        "generationStart": "2021-01-01T00:00:00Z",
+        "generationEnd": "2021-01-31T00:00:00Z",
+        "consumptionEntity": "f066596",
+        "certificateDataDate": "2021-02-12T00:00:00.000Z",
+        "nameplateCapacity": "741000",
+        "commissioningDate": "2009-01-01T00:00:00.000Z",
+        "label": "GREEN_E_ENERGY",
+        "orderId": "0a420fdb-ff96-42f8-9e99-7c11a6026485",
+        "certificateDataStatementId": "10Vk",
+        "internal": {
+          "status": "DRAFT",
+          "createdDate": "2022-06-17T14:19:51.385825Z",
+          "updatedData": "2022-06-17T14:19:51.385826Z",
+          "lockVersion": 0
+        }
+      },
+      {
+        "id": "ad9eadc2-bd80-47ee-a6e4-3c90072d5651",
+        "energy": 7000000,
+        "energyUnit": "Wh",
+        "generatorName": "GLT Los Rob 60 - DDRC Marengo",
+        "sellerId": "8c0a45ce-1594-4107-baf0-ce8846b34afd",
+        "beneficiary": "53fb6148-eb21-42de-91d6-f6195d028520",
+        "energySource": "SOLAR",
+        "country": "US",
+        "region": "CA",
+        "generationStart": "2021-07-01T00:00:00Z",
+        "generationEnd": "2021-07-31T00:00:00Z",
+        "consumptionEntity": "f0763337",
+        "certificateDataDate": "2021-02-12T00:00:00.000Z",
+        "nameplateCapacity": "56000",
+        "commissioningDate": "2012-05-01T00:00:00.000Z",
+        "label": "GREEN_E_ENERGY",
+        "orderId": "7e26487e-2221-4de1-a301-a9f66ef91aa0",
+        "certificateDataStatementId": "10Vk",
+        "internal": {
+          "status": "DRAFT",
+          "createdDate": "2022-06-17T14:19:51.396834Z",
+          "updatedData": "2022-06-17T14:19:51.396834Z",
+          "lockVersion": 0
+        }
+      }
+    ]
+  }
+}

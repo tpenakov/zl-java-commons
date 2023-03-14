@@ -1,0 +1,97 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'jacoco'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'green.zerolabs.commons'
+            artifactId = 'cron-job'
+            version = '00.00.01-SNAPSHOT'
+
+            from components.java
+        }
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenLocal() {
+        content {
+            includeGroup "green.zerolabs.commons"
+        }
+    }
+    mavenCentral()
+}
+
+dependencies {
+    implementation(project(':core'))
+
+    implementation "io.quarkus:quarkus-core:${quarkusPlatformVersion}"
+    implementation "io.quarkus:quarkus-mutiny:${quarkusPlatformVersion}"
+
+    implementation 'org.eclipse.microprofile.graphql:microprofile-graphql-api:1.1.0'
+    implementation "software.amazon.awssdk:utils:${awsSdkVersion}"
+    implementation "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+    implementation "com.fasterxml.jackson.core:jackson-core:${jacksonVersion}"
+    implementation "com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}"
+    implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:${jacksonVersion}"
+
+    testImplementation "org.slf4j:slf4j-simple:${slf4jApiVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+    testImplementation "org.mockito:mockito-core:${mockitoVersion}"
+    testImplementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+    testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+}
+
+tasks.named('test') {
+    // Use JUnit Platform for unit tests.
+    useJUnitPlatform()
+}
+
+test {
+    finalizedBy jacocoTestReport // report is always generated after tests run
+}
+
+jacocoTestReport {
+    finalizedBy jacocoTestCoverageVerification
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: ['**/model/**', '**/utils/apache/commons/**',])
+        }))
+    }
+}
+
+jacocoTestCoverageVerification {
+    dependsOn test
+    violationRules {
+        rule {
+            element = 'PACKAGE'
+            excludes = [
+                    '*.model',
+                    '*.model.*',
+            ]
+            limit {
+                minimum = 1.0
+            }
+
+        }
+    }
+}
+
+publishToMavenLocal {
+    dependsOn jacocoTestCoverageVerification
+}
+
+
+build.dependsOn jacocoTestCoverageVerification
+
