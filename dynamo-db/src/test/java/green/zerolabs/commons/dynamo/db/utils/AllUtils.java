@@ -5,10 +5,9 @@ import green.zerolabs.commons.core.service.web3.ZlW3BlockchainPropertiesRsWrappe
 import green.zerolabs.commons.core.utils.ConverterUtils;
 import green.zerolabs.commons.core.utils.GraphQlWrapper;
 import green.zerolabs.commons.core.utils.JsonUtils;
+import jakarta.enterprise.context.ApplicationScoped;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
-
-import javax.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
 @Getter
