@@ -1,5 +1,7 @@
 package green.zerolabs.commons.dynamo.db.utils;
 
+import static green.zerolabs.commons.dynamo.db.model.Constants.TABLE_NAME;
+
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import green.zerolabs.commons.apache.shiro.service.impl.CryptoServiceImpl;
@@ -13,6 +15,12 @@ import green.zerolabs.commons.dynamo.db.model.ZlDbItem;
 import green.zerolabs.commons.dynamo.db.service.DynamoDbFinderFactory;
 import io.smallrye.mutiny.Multi;
 import io.smallrye.mutiny.unchecked.Unchecked;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
+import java.time.Duration;
+import java.util.Optional;
+import java.util.function.Function;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -21,13 +29,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.Assertions;
 import org.mockito.Mockito;
 import software.amazon.awssdk.services.dynamodb.DynamoDbAsyncClient;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
-import java.time.Duration;
-import java.util.Optional;
-import java.util.function.Function;
 
 @Getter
 @Setter
@@ -59,9 +60,9 @@ public class UnitTestUtils {
             new DynamoDbUtils(
                 jsonUtils,
                 converterUtils,
-                graphQlWrapper,
                 Mockito.mock(DynamoDbAsyncClient.class),
-                cryptoService));
+                cryptoService,
+                TABLE_NAME));
     allUtils =
         Mockito.spy(
             new AllUtils(
