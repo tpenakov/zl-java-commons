@@ -2,7 +2,6 @@ package green.zerolabs.commons.dynamo.db.utils;
 
 
 import com.fasterxml.jackson.databind.JsonNode;
-import green.zerolabs.commons.core.service.CryptoService;
 import green.zerolabs.commons.core.utils.ConverterUtils;
 import green.zerolabs.commons.core.utils.JsonUtils;
 import green.zerolabs.commons.dynamo.db.model.ZlDbItem;
@@ -48,7 +47,6 @@ public class DynamoDbUtils {
   private final JsonUtils jsonUtils;
   private final ConverterUtils converterUtils;
   private final DynamoDbAsyncClient dynamoDB;
-  private final CryptoService cryptoService;
   private final DynamoDbHelperUtils dynamoDbHelperUtils;
   private final Function<Object, JsonNode> objectToJsonNode;
 
@@ -58,12 +56,10 @@ public class DynamoDbUtils {
       final JsonUtils jsonUtils,
       final ConverterUtils converterUtils,
       final DynamoDbAsyncClient dynamoDB,
-      final CryptoService cryptoService,
       final String tableName) {
     this.jsonUtils = jsonUtils;
     this.converterUtils = converterUtils;
     this.dynamoDB = dynamoDB;
-    this.cryptoService = cryptoService;
     dynamoDbHelperUtils = new DynamoDbHelperUtils(jsonUtils, converterUtils, tableName);
     objectToJsonNode =
         Unchecked.function(

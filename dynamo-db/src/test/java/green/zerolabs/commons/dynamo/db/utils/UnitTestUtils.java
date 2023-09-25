@@ -61,7 +61,6 @@ public class UnitTestUtils {
                 jsonUtils,
                 converterUtils,
                 Mockito.mock(DynamoDbAsyncClient.class),
-                cryptoService,
                 TABLE_NAME));
     allUtils =
         Mockito.spy(
