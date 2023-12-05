@@ -1,9 +1,8 @@
 package green.zerolabs.commons.dynamo.db.utils;
 
+
 import com.fasterxml.jackson.databind.JsonNode;
-import green.zerolabs.commons.core.service.CryptoService;
 import green.zerolabs.commons.core.utils.ConverterUtils;
-import green.zerolabs.commons.core.utils.GraphQlWrapper;
 import green.zerolabs.commons.core.utils.JsonUtils;
 import green.zerolabs.commons.dynamo.db.model.ZlDbItem;
 import green.zerolabs.commons.dynamo.db.model.ZlDbPutItemPackage;
@@ -11,14 +10,6 @@ import io.smallrye.mutiny.Multi;
 import io.smallrye.mutiny.Uni;
 import io.smallrye.mutiny.tuples.Tuple2;
 import io.smallrye.mutiny.unchecked.Unchecked;
-import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
-import org.bk.aws.dynamo.util.JsonAttributeValueUtil;
-import software.amazon.awssdk.services.dynamodb.DynamoDbAsyncClient;
-import software.amazon.awssdk.services.dynamodb.model.*;
-import software.amazon.awssdk.utils.CollectionUtils;
-import software.amazon.awssdk.utils.StringUtils;
-
 import java.text.MessageFormat;
 import java.util.*;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -28,9 +19,13 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
-import static green.zerolabs.commons.dynamo.db.model.Constants.STORAGE_ZLMVPDD_NAME;
-import static green.zerolabs.commons.dynamo.db.model.Constants.TABLE_NAME;
+import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
+import org.bk.aws.dynamo.util.JsonAttributeValueUtil;
+import software.amazon.awssdk.services.dynamodb.DynamoDbAsyncClient;
+import software.amazon.awssdk.services.dynamodb.model.*;
+import software.amazon.awssdk.utils.CollectionUtils;
+import software.amazon.awssdk.utils.StringUtils;
 
 /*
  * Created by Triphon Penakov 19.03.2022
@@ -51,9 +46,7 @@ public class DynamoDbUtils {
   public static final String DELIMITER = "--";
   private final JsonUtils jsonUtils;
   private final ConverterUtils converterUtils;
-  private final GraphQlWrapper graphQlWrapper;
   private final DynamoDbAsyncClient dynamoDB;
-  private final CryptoService cryptoService;
   private final DynamoDbHelperUtils dynamoDbHelperUtils;
   private final Function<Object, JsonNode> objectToJsonNode;
 
@@ -62,22 +55,19 @@ public class DynamoDbUtils {
   public DynamoDbUtils(
       final JsonUtils jsonUtils,
       final ConverterUtils converterUtils,
-      final GraphQlWrapper graphQlWrapper,
       final DynamoDbAsyncClient dynamoDB,
-      final CryptoService cryptoService) {
+      final String tableName) {
     this.jsonUtils = jsonUtils;
     this.converterUtils = converterUtils;
-    this.graphQlWrapper = graphQlWrapper;
     this.dynamoDB = dynamoDB;
-    this.cryptoService = cryptoService;
-    dynamoDbHelperUtils = new DynamoDbHelperUtils(jsonUtils, converterUtils);
+    dynamoDbHelperUtils = new DynamoDbHelperUtils(jsonUtils, converterUtils, tableName);
     objectToJsonNode =
         Unchecked.function(
             zlDbItem ->
                 getJsonUtils()
                     .getObjectMapper()
                     .readTree(getJsonUtils().toStringLazy(zlDbItem).toString()));
-    tableName = Optional.ofNullable(System.getenv(STORAGE_ZLMVPDD_NAME)).orElse(TABLE_NAME);
+    this.tableName = tableName;
   }
 
   public Multi<TransactWriteItemsResponse> write(final List<TransactWriteItem> requests) {

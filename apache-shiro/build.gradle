@@ -6,9 +6,7 @@ plugins {
 publishing {
     publications {
         maven(MavenPublication) {
-            groupId = 'green.zerolabs.commons'
             artifactId = 'apache-shiro'
-            version = '00.00.01-SNAPSHOT'
 
             from components.java
         }

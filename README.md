@@ -8,3 +8,8 @@ https://docs.gradle.org/current/userguide/multi_project_builds.html
 gradle publishToMavenLocal
 ```
 
+#### Build and publish to local maven repository
+
+```
+./gradlew build publishToMavenLocal
+```

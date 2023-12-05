@@ -1,5 +1,8 @@
 package green.zerolabs.commons.dynamo.db.utils;
 
+import static green.zerolabs.commons.dynamo.db.utils.DynamoDbUtils.*;
+import static java.util.stream.Collectors.toMap;
+
 import com.fasterxml.jackson.databind.JsonNode;
 import green.zerolabs.commons.core.utils.ConverterUtils;
 import green.zerolabs.commons.core.utils.JsonUtils;
@@ -8,6 +11,11 @@ import green.zerolabs.commons.dynamo.db.model.ZlDbItem;
 import green.zerolabs.commons.dynamo.db.model.ZlDbPutItemPackage;
 import io.smallrye.mutiny.tuples.Tuple2;
 import io.smallrye.mutiny.unchecked.Unchecked;
+import java.util.*;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.bk.aws.dynamo.util.JsonAttributeValueUtil;
@@ -15,17 +23,6 @@ import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.TransactWriteItem;
 import software.amazon.awssdk.utils.CollectionUtils;
 import software.amazon.awssdk.utils.StringUtils;
-
-import java.util.*;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import static green.zerolabs.commons.dynamo.db.model.Constants.STORAGE_ZLMVPDD_NAME;
-import static green.zerolabs.commons.dynamo.db.model.Constants.TABLE_NAME;
-import static green.zerolabs.commons.dynamo.db.utils.DynamoDbUtils.*;
-import static java.util.stream.Collectors.toMap;
 
 /**
  * Please does not make this class public. Access it through DynamoDbUtils. The idea behind is to
@@ -39,7 +36,8 @@ class DynamoDbHelperUtils {
   private final Function<Object, JsonNode> objectToJsonNode;
   private final String tableName;
 
-  public DynamoDbHelperUtils(final JsonUtils jsonUtils, final ConverterUtils converterUtils) {
+  public DynamoDbHelperUtils(
+      final JsonUtils jsonUtils, final ConverterUtils converterUtils, final String tableName) {
     this.jsonUtils = jsonUtils;
     this.converterUtils = converterUtils;
     objectToJsonNode =
@@ -48,7 +46,7 @@ class DynamoDbHelperUtils {
                 getJsonUtils()
                     .getObjectMapper()
                     .readTree(getJsonUtils().toStringLazy(zlDbItem).toString()));
-    tableName = Optional.ofNullable(System.getenv(STORAGE_ZLMVPDD_NAME)).orElse(TABLE_NAME);
+    this.tableName = tableName;
   }
 
   List<List<TransactWriteItem>> splitToBatches(final List<TransactWriteItem> input) {
