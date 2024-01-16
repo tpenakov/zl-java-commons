@@ -7,6 +7,12 @@ import green.zerolabs.commons.dynamo.db.model.LogicalOperator;
 import green.zerolabs.commons.dynamo.db.model.ZlDbItem;
 import io.smallrye.mutiny.Uni;
 import io.smallrye.mutiny.tuples.Tuple2;
+import java.text.MessageFormat;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,13 +21,6 @@ import org.bk.aws.dynamo.util.JsonAttributeValueUtil;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.utils.CollectionUtils;
 import software.amazon.awssdk.utils.StringUtils;
-
-import java.text.MessageFormat;
-import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /***
  * Some documentation:
@@ -59,7 +58,7 @@ public class DynamoDbFinder {
 
   private final DynamoDbUtils dynamoDbUtils;
 
-  private Map<String, String> expressionAttributeNames = null;
+  @Getter @Setter private Map<String, String> expressionAttributeNames = null;
 
   @Setter(AccessLevel.PROTECTED)
   private boolean bracketJustOpened = false;
@@ -439,7 +438,9 @@ public class DynamoDbFinder {
   void fillFilterExpression(
       final LogicalOperator logicalOperator,
       final Tuple2<String, Map<String, AttributeValue>> objects) {
-    expressionAttributeNames = EXPRESSION_ATTRIBUTE_NAMES_MAP;
+    if (Objects.isNull(getExpressionAttributeNames())) {
+      setExpressionAttributeNames(EXPRESSION_ATTRIBUTE_NAMES_MAP);
+    }
     getExpressionAttributeValues().putAll(objects.getItem2());
 
     final String expression = objects.getItem1();
